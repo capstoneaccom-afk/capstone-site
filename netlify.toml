@@ -1,0 +1,5 @@
+# Netlify publie simplement le dossier « site » : aucune étape de construction côté Netlify.
+[build]
+  publish = "site"
+
+# Les en-têtes de sécurité et la mise en cache sont dans site/_headers.
