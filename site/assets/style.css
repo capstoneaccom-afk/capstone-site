@@ -727,3 +727,91 @@ html.anim .pv:not(.in) .pv-planl { opacity: 0; }
 html.anim .pv:not(.in) .pv-rise { transform: scaleY(0); }
 .stage:hover .pv .pv-rise { transform: translateY(-5px); transition-delay: calc(var(--k) * 60ms); transition-duration: .5s; }
 .bg-orange .card > .ico { width: 32px; height: 32px; color: var(--orange-600); }
+
+/* ======================= Responsive v7 : 13", mobile, 27" ======================= */
+/* Échelle typographique calée sur la largeur ET la hauteur, pour qu'un écran 13" (1280–1440 × 800–900) ne soit pas écrasé par les titres. */
+:root { --sec: clamp(104px, 11vw, 184px); }
+.d1 { font-size: clamp(46px, min(7.4vw, 12.5vh), 116px); }
+.ph-sub { font-size: clamp(24px, 2.8vw, 44px); }
+.d2 { font-size: clamp(34px, 4.2vw, 64px); }
+.lead { font-size: clamp(17px, 1.35vw, 20px); }
+.st-title { font-size: clamp(52px, 6.2vw, 100px); }
+.dark-photo h2 { font-size: clamp(42px, 5.4vw, 92px); }
+.ticker span { font-size: clamp(34px, 4.6vw, 72px); }
+.ticker { padding-block: clamp(20px, 2vw, 32px); }
+.intro-big { font-size: clamp(22px, 2.3vw, 34px); }
+.quote-sec blockquote { font-size: clamp(34px, 4.6vw, 76px); }
+.cta-band h2 { font-size: clamp(38px, 4.8vw, 80px); }
+.mission { font-size: clamp(30px, 3.8vw, 58px); }
+.fig b { font-size: clamp(44px, 4.6vw, 72px); }
+.case h3 { font-size: clamp(42px, 4.6vw, 76px); }
+.mt-pan h3 { font-size: clamp(32px, 3.4vw, 52px); }
+.mode h3 { font-size: clamp(36px, 3.8vw, 60px); }
+.cm h2 { font-size: clamp(40px, 4.2vw, 64px); }
+.stage .iso { width: min(70%, 280px); }
+
+/* Aération entre les blocs */
+.ph-in { padding-block: clamp(56px, 8vw, 120px) clamp(56px, 6vw, 96px); }
+.intro-big { margin-top: clamp(24px, 3vw, 48px); }
+.stages { margin-top: clamp(56px, 6vw, 104px); }
+.sec-head + * { margin-top: clamp(56px, 6vw, 96px); }
+.dark-photo .wrap { padding-block: clamp(128px, 13vw, 232px); }
+.quote-sec { padding-block: clamp(112px, 12vw, 200px); }
+.cta-band { padding: clamp(48px, 7vw, 120px) clamp(28px, 6vw, 104px); }
+footer { margin-top: calc(var(--sec) * 1.1); }
+
+/* 13" : 1180–1500 px de large, hauteur 750–950 px */
+@media (min-width: 1100px) and (max-width: 1520px) {
+  .top .wrap { height: 72px; }
+  .btn { height: 48px; padding: 0 22px; }
+  .btn.s { height: 40px; }
+  .card, .fig { min-height: 0; }
+  .mode { min-height: clamp(400px, 38vw, 540px); }
+  .case { min-height: 500px; }
+  .mt-tab { padding: 18px 22px; font-size: 19px; }
+}
+@media (min-width: 1100px) and (max-height: 860px) {
+  .ph-in { padding-block: 48px 64px; }
+  .ph-in .d1 { margin-top: 18px; }
+  .ph-foot { margin-top: 32px; }
+}
+
+/* Grands écrans (24–27") : la colonne s'élargit et tout grandit un peu */
+@media (min-width: 1800px) {
+  :root { --max: 1520px; --gutter: 72px; --sec: clamp(160px, 9vw, 220px); }
+  body { font-size: 18px; }
+  .wordmark { font-size: 26px; }
+  .nav a { font-size: 16px; padding: 9px 15px; }
+  .top .wrap { height: 88px; }
+  .btn { height: 56px; padding: 0 30px; font-size: 16px; }
+  .btn.s { height: 46px; font-size: 15px; }
+  .label { font-size: 14px; }
+  .lead { font-size: 22px; }
+  .d1 { font-size: min(7vw, 13vh, 148px); }
+  .ph-sub { font-size: 52px; }
+  .d2 { font-size: 80px; }
+  .st-title { font-size: 128px; }
+  .stage .iso { width: min(70%, 340px); }
+  .stage p, .card p, .give p, .co p, .post p { font-size: 17px; }
+  .dark-photo h2 { font-size: 112px; }
+  .ticker span { font-size: 92px; }
+  .intro-big { font-size: 42px; }
+  .quote-sec blockquote { font-size: 92px; }
+  .cta-band h2 { font-size: 96px; }
+  .mission { font-size: 72px; }
+  .fig b { font-size: 88px; }
+  .case h3 { font-size: 92px; }
+  .card h3 { font-size: 32px; }
+  .mt-pan h3 { font-size: 64px; }
+  .mt-tab { font-size: 24px; padding: 26px 28px; }
+  .chip { font-size: 18px; padding: 14px 22px 14px 18px; }
+  .giant { font-size: min(19vw, 340px); }
+}
+@media (min-width: 2300px) {
+  :root { --max: 1760px; --gutter: 88px; }
+  body { font-size: 19px; }
+  .d1 { font-size: min(6.6vw, 13vh, 172px); }
+  .d2 { font-size: 92px; }
+  .st-title { font-size: 148px; }
+  .lead { font-size: 24px; }
+}
