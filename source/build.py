@@ -20,7 +20,7 @@ ARROW = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width
 PLUS = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2V14M2 8H14"/></svg>'
 
 SITE = dict(
-    domain='https://[DOMAINE]',          # ex. https://capstone.fr
+    domain='https://capstone.ac',
     email='[E-MAIL]',
     phone='[TÉLÉPHONE]',
     linkedin='https://www.linkedin.com/',  # URL de la page LinkedIn Capstone
