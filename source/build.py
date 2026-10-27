@@ -598,6 +598,7 @@ headers = '''/*
   Cache-Control: public, max-age=604800
 '''
 open(f'{out}/_headers', 'w').write(headers)
+if os.path.isdir(f'{B}/signature'): shutil.copytree(f'{B}/signature', f'{out}/signature', dirs_exist_ok=True)
 if not PROD:
     open(f'{out}/robots.txt', 'w').write('User-agent: *\nDisallow: /\n')
     for f in os.listdir(out):
