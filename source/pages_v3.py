@@ -2,7 +2,7 @@ exec(open(os.path.join(B, 'iso.py')).read())
 # Pages et sections ajoutées en v3 (exécuté dans build.py, après les définitions de base)
 
 COMPANIES = [
-    dict(id='numa', url=None, name='Nüma', sector='Sécurité', year='2025', mode='BUILD', img='numa.jpg', g='g-peche', il='strates', ilc='p',
+    dict(id='numa', url='https://numa-connect.com', name='Nüma', sector='Sécurité', year='2025', mode='BUILD', img='numa.jpg', g='g-peche', il='strates', ilc='p',
          tagline='L’alarme professionnelle que l’on configure soi-même.',
          desc='La nouvelle façon de sécuriser son logement. Une alarme professionnelle configurée en ligne en quelques minutes, au prix affiché, avec un matériel qui vous appartient et une télésurveillance sans engagement.',
          points=['Configurateur en ligne, prix affiché en temps réel', 'Matériel Ajax qui appartient au client', 'Pose par soi-même ou par un technicien certifié', 'Télésurveillance à 19,99 € par mois, résiliable'],
@@ -192,7 +192,7 @@ def home():
 <div class="ticker" aria-hidden="true"><div class="track">{''.join(''.join(f'<span>{x}</span>' for x in ['Sécurité électronique', 'Bâtiment', 'Services techniques', 'Services aux entreprises']) for _ in range(3))}</div></div>
 
 <section class="dark-photo">
-  <img src="img/chantier.jpg" alt="" loading="lazy">
+  <img src="img/equipe.jpg" alt="" loading="lazy" style="object-position:50% 45%">
   <div class="wrap">
     <div>
       <span class="label w">Notre approche</span>
@@ -312,7 +312,7 @@ def about():
         'Capstone co-fonde et développe des entreprises dans la sécurité, le bâtiment et les services. Nous les bâtissons avec celles et ceux qui font ces métiers, pour qu’elles durent.',
         f'<a class="btn" href="contact.html">Nous rencontrer {ARROW}</a>') + f'''
 <div class="ph-media">
-  <div class="wrap"><div class="frame"><img src="img/chantier.jpg" alt="Chantier de nuit" style="object-position:50% 60%"></div></div>
+  <div class="wrap"><div class="frame"><img src="img/conference.jpg" alt="Conférence devant un public de dirigeants" style="object-position:50% 55%"></div></div>
 </div>
 
 <section class="sec">

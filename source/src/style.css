@@ -878,3 +878,4 @@ footer { margin-top: calc(var(--sec) * 1.1); }
   .intro-big { font-size: 38px; }
 }
 .pf-url { font-size: 13px; color: var(--muted); }
+.dark-photo::before { background: linear-gradient(90deg, rgba(10,10,12,.9) 0%, rgba(10,10,12,.78) 45%, rgba(10,10,12,.62) 100%); }

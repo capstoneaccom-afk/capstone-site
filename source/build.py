@@ -139,7 +139,7 @@ def home():
 </section>
 
 <section class="dark-photo">
-  <img src="img/chantier.jpg" alt="" loading="lazy">
+  <img src="img/equipe.jpg" alt="" loading="lazy" style="object-position:50% 45%">
   <div class="wrap">
     <div>
       <span class="label w">Notre approche</span>
@@ -304,7 +304,7 @@ def advise():
         'Votre entreprise est rentable, votre métier est solide, mais la croissance plafonne. Capstone ADVISE intervient en task force ou en advisory board pour lever ce qui bloque, qu’il s’agisse de l’organisation commerciale, des outils ou du pilotage.',
         f'<a class="btn" href="contact.html#advise">Dirigeant · Parlons de votre entreprise {ARROW}</a>', mesh='lilas', labelcls='l') + f'''
 <div class="ph-media">
-  <div class="wrap"><div class="frame placeholder grain g-lilas">{illu('rosace','l7')}<span class="cap">Photo à fournir · dirigeant en atelier</span></div></div>
+  <div class="wrap"><div class="frame"><img src="img/bureau.jpg" alt="Salle de réunion d’une entreprise" style="object-position:50% 55%"></div></div>
 </div>
 
 <section class="sec">
@@ -340,7 +340,7 @@ def advise():
 </section>
 
 <section class="dark-photo">
-  <img src="img/chantier.jpg" alt="" loading="lazy" style="object-position:50% 80%">
+  <img src="img/atelier.jpg" alt="" loading="lazy" style="object-position:50% 40%">
   <div class="wrap">
     <div>
       <span class="label w">Les leviers</span>
