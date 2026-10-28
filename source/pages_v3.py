@@ -293,7 +293,7 @@ def portfolio():
 </section>
 
 <section class="dark-photo">
-  <img src="img/grue.jpg" alt="" loading="lazy">
+  <img src="img/atelier.jpg" alt="" loading="lazy" style="object-position:50% 40%">
   <div class="wrap">
     <div>
       <span class="label w">Et la suite</span>

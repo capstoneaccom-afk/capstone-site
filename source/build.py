@@ -218,7 +218,7 @@ def build():
         'Lancer une idée, entreprendre ou reprendre une entreprise exige de changer de casquette en permanence. Il est rare de réunir seul toutes les expertises pour franchir chaque étape. Capstone BUILD a été pensé pour vous. Vous apportez l’expertise métier, nous apportons l’infrastructure entrepreneuriale et prenons notre part de responsabilités et de capital.',
         f'<a class="btn" href="contact.html#build">Porteur de projet · Présentez-vous {ARROW}</a>') + f'''
 <div class="ph-media">
-  <div class="wrap"><div class="frame"><img src="img/grue.jpg" alt="Grue de chantier au coucher du soleil" style="object-position:50% 100%"></div></div>
+  <div class="wrap"><div class="frame"><img src="img/equipe.jpg" alt="Entrepreneurs en séance de travail" style="object-position:50% 50%"></div></div>
 </div>
 
 <section class="sec">
