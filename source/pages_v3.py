@@ -2,22 +2,22 @@ exec(open(os.path.join(B, 'iso.py')).read())
 # Pages et sections ajoutées en v3 (exécuté dans build.py, après les définitions de base)
 
 COMPANIES = [
-    dict(id='numa', name='Nüma', sector='Sécurité', year='2025', mode='BUILD', img='numa.jpg', g='g-peche', il='strates', ilc='p',
+    dict(id='numa', url=None, name='Nüma', sector='Sécurité', year='2025', mode='BUILD', img='numa.jpg', g='g-peche', il='strates', ilc='p',
          tagline='L’alarme professionnelle que l’on configure soi-même.',
          desc='La nouvelle façon de sécuriser son logement. Une alarme professionnelle configurée en ligne en quelques minutes, au prix affiché, avec un matériel qui vous appartient et une télésurveillance sans engagement.',
          points=['Configurateur en ligne, prix affiché en temps réel', 'Matériel Ajax qui appartient au client', 'Pose par soi-même ou par un technicien certifié', 'Télésurveillance à 19,99 € par mois, résiliable'],
          role='Co-fondation, structuration de la croissance, acquisition digitale.'),
-    dict(id='aurus', name='Aurus System', sector='Sécurité', year='2025', mode='BUILD', img='aurus.jpg', g='g-orange', il='trame', ilc='o7',
+    dict(id='aurus', url='https://aurus-system.com', name='Aurus System', sector='Sécurité', year='2025', mode='BUILD', img='aurus.jpg', g='g-orange', il='trame', ilc='o7',
          tagline='La sécurité des chantiers, de l’audit à la maintenance.',
          desc='Sécurise les chantiers et les bâtiments professionnels, en installation temporaire ou permanente, avec télésurveillance 24/7. Un seul interlocuteur de l’audit à la maintenance.',
          points=['Installation temporaire ou permanente', 'Télésurveillance 24/7', 'Un seul interlocuteur, de l’audit à la maintenance', 'Île-de-France et Orléans'],
          role='Co-fondation, structuration de la croissance.'),
-    dict(id='capfield', name='CapField', sector='Services techniques', year='2026', mode='BUILD', img='capfield.jpg', g='g-peche', il='trame', ilc='p',
+    dict(id='capfield', url='https://capfield.fr', name='CapField', sector='Services techniques', year='2026', mode='BUILD', img='capfield.jpg', g='g-peche', il='trame', ilc='p',
          tagline='Le réseau d’intervenants de proximité.',
          desc='Réseau d’intervenants de proximité qui réalise les poses, contrôles et remises en service pour les entreprises qui déploient des équipements sur le terrain.',
          points=['Poses, contrôles et remises en service', 'Un prix à l’acte', 'Une preuve d’intervention systématique', 'Pour les entreprises du groupe et pour des tiers'],
          role='Co-fondation avec un opérateur issu de l’industrie, structuration du modèle et de l’outil de pilotage.'),
-    dict(id='taskia', name='Taskia', sector='Services aux indépendants', year=None, mode=None, img=None, g='g-lilas', il='arcs', ilc='l7',
+    dict(id='taskia', url=None, name='Taskia', sector='Services aux indépendants', year=None, mode=None, img=None, g='g-lilas', il='arcs', ilc='l7',
          tagline='L’assistant administratif des artisans, dans WhatsApp.',
          desc='Un assistant opérationnel dans WhatsApp pour les indépendants, les artisans et les petites entreprises. Devis, factures, rendez-vous et relances se gèrent par simple message écrit ou vocal.',
          points=['Devis, factures, rendez-vous et relances', 'Par message écrit ou vocal, dans WhatsApp', 'Un relais humain pour les missions complexes', 'Aucun nouvel outil à apprendre'],
@@ -132,6 +132,7 @@ def co_dialogs():
       <p class="cm-lead">{c["desc"]}</p>
       <ul class="cm-pts">{pts}</ul>
       <div class="cm-role"><small>Rôle de Capstone</small>{c["role"]}</div>
+      {f'<a class="btn s cm-site" href="{c["url"]}" target="_blank" rel="noopener">Visiter {c["url"].split("//")[1]} {ARROW}</a>' if c.get("url") else ""}
       <div class="cm-nav"><button type="button" class="cm-prev">{ico('arrow-left')}Précédente</button><button type="button" class="cm-next">Suivante{ico('arrow-right')}</button></div>
     </div>
   </div>

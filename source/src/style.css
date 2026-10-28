@@ -815,3 +815,65 @@ footer { margin-top: calc(var(--sec) * 1.1); }
   .st-title { font-size: 148px; }
   .lead { font-size: 24px; }
 }
+
+/* v8 : écrans portables en « plus d'espace » (jusqu'à ~2200 px) traités comme des 13" ; tailles globalement réduites */
+.cm-site { align-self: flex-start; }
+.d1 { font-size: clamp(44px, min(6.6vw, 11vh), 104px); }
+.ph-sub { font-size: clamp(22px, 2.4vw, 38px); }
+.d2 { font-size: clamp(32px, 3.6vw, 56px); }
+.lead { font-size: clamp(16px, 1.25vw, 19px); }
+.st-title { font-size: clamp(48px, 5.4vw, 88px); }
+.dark-photo h2 { font-size: clamp(40px, 4.6vw, 80px); }
+.ticker span { font-size: clamp(30px, 3.8vw, 60px); }
+.intro-big { font-size: clamp(21px, 2vw, 30px); }
+.quote-sec blockquote { font-size: clamp(32px, 4vw, 64px); }
+.cta-band h2 { font-size: clamp(36px, 4.2vw, 68px); }
+.mission { font-size: clamp(28px, 3.3vw, 50px); }
+.fig b { font-size: clamp(42px, 4vw, 64px); }
+.case h3 { font-size: clamp(40px, 4vw, 66px); }
+.mt-pan h3 { font-size: clamp(30px, 3vw, 46px); }
+.mt-tab { font-size: clamp(17px, 1.4vw, 20px); padding: 18px 22px; }
+.mt-list li { font-size: 14px; }
+.chip { font-size: 15px; }
+.card h3 { font-size: 24px; }
+.stage .iso { width: min(64%, 260px); }
+.mode h3 { font-size: clamp(34px, 3.4vw, 52px); }
+/* annule l'agrandissement « grand écran » en dessous de 2200 px */
+@media (min-width: 1800px) and (max-width: 2199px) {
+  :root { --max: 1360px; --gutter: 64px; --sec: clamp(120px, 8vw, 168px); }
+  body { font-size: 17px; }
+  .wordmark { font-size: 24px; }
+  .nav a { font-size: 15px; padding: 8px 12px; }
+  .top .wrap { height: 76px; }
+  .btn { height: 50px; padding: 0 24px; font-size: 15px; }
+  .btn.s { height: 42px; font-size: 14px; }
+  .label { font-size: 13px; }
+  .lead { font-size: 19px; }
+  .d1 { font-size: min(5.6vw, 11vh, 108px); }
+  .ph-sub { font-size: 38px; }
+  .d2 { font-size: 58px; }
+  .st-title { font-size: 92px; }
+  .stage .iso { width: min(64%, 270px); }
+  .stage p, .card p, .give p, .co p, .post p { font-size: 15.5px; }
+  .dark-photo h2 { font-size: 84px; }
+  .ticker span { font-size: 54px; }
+  .intro-big { font-size: 31px; }
+  .quote-sec blockquote { font-size: 68px; }
+  .cta-band h2 { font-size: 72px; }
+  .mission { font-size: 52px; }
+  .fig b { font-size: 66px; }
+  .case h3 { font-size: 68px; }
+  .card h3 { font-size: 25px; }
+  .mt-pan h3 { font-size: 48px; }
+  .mt-tab { font-size: 20px; padding: 20px 24px; }
+  .chip { font-size: 15.5px; padding: 12px 20px 12px 16px; }
+  .giant { font-size: min(17vw, 300px); }
+}
+@media (min-width: 2200px) {
+  :root { --max: 1600px; --gutter: 80px; }
+  .d1 { font-size: min(5.6vw, 12vh, 140px); }
+  .d2 { font-size: 72px; }
+  .st-title { font-size: 116px; }
+  .dark-photo h2 { font-size: 104px; }
+  .intro-big { font-size: 38px; }
+}
