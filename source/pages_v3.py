@@ -17,7 +17,7 @@ COMPANIES = [
          desc='Réseau d’intervenants de proximité qui réalise les poses, contrôles et remises en service pour les entreprises qui déploient des équipements sur le terrain.',
          points=['Poses, contrôles et remises en service', 'Un prix à l’acte', 'Une preuve d’intervention systématique', 'Pour les entreprises du groupe et pour des tiers'],
          role='Co-fondation avec un opérateur issu de l’industrie, structuration du modèle et de l’outil de pilotage.'),
-    dict(id='taskia', url=None, name='Taskia', sector='Services aux indépendants', year=None, mode=None, img=None, g='g-lilas', il='arcs', ilc='l7',
+    dict(id='taskia', url='https://taskia.fr', name='Taskia', sector='Services aux indépendants', year=None, mode=None, img='taskia.jpg', g='g-lilas', il='arcs', ilc='l7',
          tagline='L’assistant administratif des artisans, dans WhatsApp.',
          desc='Un assistant opérationnel dans WhatsApp pour les indépendants, les artisans et les petites entreprises. Devis, factures, rendez-vous et relances se gèrent par simple message écrit ou vocal.',
          points=['Devis, factures, rendez-vous et relances', 'Par message écrit ou vocal, dans WhatsApp', 'Un relais humain pour les missions complexes', 'Aucun nouvel outil à apprendre'],
@@ -265,7 +265,7 @@ def portfolio():
         pills = ''.join(f'<span>{x}</span>' for x in [c['sector'], c['year'], c['mode']] if x)
         cards += f'''<a class="pf" href="#{c["id"]}" data-open="{c["id"]}">
   <div class="pf-media">{media}</div>
-  <div class="pf-body"><div class="pf-pills">{pills}</div><h3>{c["name"]}</h3><p>{c["tagline"]}</p><span class="arrow-link"><span class="c">{PLUS}</span>Découvrir l’activité</span></div>
+  <div class="pf-body"><div class="pf-pills">{pills}</div><h3>{c["name"]}</h3><p>{c["tagline"]}</p><span class="arrow-link"><span class="c">{PLUS}</span>Découvrir l’activité</span>{f'<span class="pf-url">{c["url"].split("//")[1]} ↗</span>' if c.get("url") else ""}</div>
 </a>'''
     return page_head('Capstone Portfolio', 'Les entreprises du groupe Capstone : Nüma, Aurus System, CapField et Taskia.') + header('portfolio.html') + '\n<main>\n' + ph(
         'Portfolio', 'Portfolio', 'Un écosystème, pas un portefeuille.',

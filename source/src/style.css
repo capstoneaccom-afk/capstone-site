@@ -877,3 +877,4 @@ footer { margin-top: calc(var(--sec) * 1.1); }
   .dark-photo h2 { font-size: 104px; }
   .intro-big { font-size: 38px; }
 }
+.pf-url { font-size: 13px; color: var(--muted); }
