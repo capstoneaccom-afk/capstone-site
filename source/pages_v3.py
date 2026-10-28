@@ -447,7 +447,7 @@ def mentions():
 <section class="sec" style="padding-top:clamp(40px,5vw,64px);padding-bottom:0">
   <div class="wrap"><article class="prose">
     <h2>Éditeur du site</h2>
-    <p>[RAISON SOCIALE], [FORME JURIDIQUE] au capital de [MONTANT] €<br>Siège social Rue Emile Francqui 6, 1435 Mont-Saint-Guibert, Belgique<br>[RCS / SIREN ou numéro BCE] · TVA [NUMÉRO]<br>Contact {SITE["email"]}</p>
+    <p>[RAISON SOCIALE], [FORME JURIDIQUE] au capital de [MONTANT] €<br>Siège social [ADRESSE DU SIÈGE]<br>SIREN 100 772 227 · TVA FR91 100 772 227<br>Contact {SITE["email"]}</p>
     <p>Directeur de la publication [NOM].</p>
     <h2>Hébergement</h2>
     <p>Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis. netlify.com</p>

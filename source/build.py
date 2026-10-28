@@ -23,7 +23,7 @@ SITE = dict(
     domain='https://capstone.ac',
     email='[E-MAIL]',
     phone='[TÉLÉPHONE]',
-    linkedin='https://www.linkedin.com/',  # URL de la page LinkedIn Capstone
+    linkedin='https://www.linkedin.com/company/capstone-venture-building',  # URL de la page LinkedIn Capstone
 )
 SHOW_BLOG = False   # le blog reste préparé mais n'est ni lié ni publié
 
@@ -499,7 +499,6 @@ def contact(preview):
       <span class="label k">Nous joindre</span>
       <div class="info">
         <div>{ico('envelope-simple')}<div><small>E-mail</small><span>{SITE["email"]}</span></div></div>
-        <div>{ico('phone')}<div><small>Téléphone</small><span>{SITE["phone"]}</span></div></div>
         <div>{ico('map-pin')}<div><small>Belgique</small><span>Rue Emile Francqui 6<br>1435 Mont-Saint-Guibert</span></div></div>
         <div>{ico('map-pin')}<div><small>France</small><span>Orléans</span></div></div>
         <div>{ico('linkedin-logo')}<div><small>LinkedIn</small><span><a href="{SITE["linkedin"]}" rel="noopener">Capstone</a></span></div></div>
